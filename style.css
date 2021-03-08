@@ -1,0 +1,282 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+x {
+  color: #305299;
+  color: #4dc2bd;
+  color: #108b82;
+  color: #3c82c4;
+  color: #429f98;
+}
+html {
+  
+  scroll-behavior: smooth;
+}
+
+body {
+}
+
+#newsLetter form {
+  background: linear-gradient(-45deg, #305299,#429f98);
+  border: 2px solid white;
+  padding: 2% 3% 5% 3%;
+  border-radius: 10px;
+  font-size: 28px;
+  font-weight: 60;
+  opacity: 0.95;
+  text-align: center  ;
+  margin-top: 20vh;
+  max-width: 40vw;
+  color: white;
+}
+
+#newsLetter input{
+  height: 30px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: linear-gradient(-45deg, #305299,#429f98);
+  background-size: 200% 200%;
+  animation: change 10s ease-in-out infinite;
+  padding: 10px;
+  opacity: 0.9;
+}
+
+#header img {
+  background-repeat: no-repeat;
+}
+
+#headerLeft {
+  opacity: 1;
+}
+
+#headerLeft img {
+  width: 200px;
+}
+
+#headerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headerRight img {
+  height: 60px;
+  margin-top: 20px;
+}
+
+#homeBtn {
+}
+
+.navBtn {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 60;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 5px 30px;
+  margin: 0px 5px;
+  transition: 0.3s;
+}
+.navBtn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* opacity: 0.5; */
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#newsBtn {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  opacity: 1;
+  background: linear-gradient(-45deg, #1973be, #faa519, #69cd28);
+  animation: change 10s ease-in-out infinite;
+  position: relative;
+  background-size: 400% 400%;
+  border-radius: 10px;
+}
+
+#intBtn {
+}
+
+#countBtn {
+}
+/*  culoare de bagat in animatie (eventual) #3c82c4*/
+#animatie {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/2375.jpg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#jobShop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageFormat {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#homePage {
+}
+
+#jobShop img {
+  border: 3px solid white;
+  color: white;
+  padding: 3rem 10rem;
+  border-radius: 10px;
+}
+/*  culoare de bagat in animatie (eventual) #3c82c4*/
+
+#intro {
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  
+}
+
+#countDown {
+}
+
+#newsLetter {
+  font-size: x-large;
+  font-weight: 200;
+
+
+}
+
+
+
+. @keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.bellowBoxShadow {
+  box-shadow: 2px 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.instagram {
+  background-color: purple;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+
+#demo {
+  font-size: xx-large;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+
+.subBtn {
+  margin: 4% 0% 2% 0%;
+  padding: 1% 3% ;
+}
+
+.subBtn:hover{
+  background-color:#429f98 ;
+}
+
+.checkBox {
+  vertical-align:middle;
+}
+
+.checkBox:hover{
+  background-color: #4dc2bd;
+}
+
+.checkText {
+  vertical-align:middle;
+  font-size: 15px;
+}
+
+.textMargin {
+  margin-top: 6%;
+}

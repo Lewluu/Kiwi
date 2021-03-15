@@ -1,3 +1,5 @@
+//countdown
+
 var countDownDate = new Date("May 10, 2021 10:00:00").getTime();
 
 // Update the count down every 1 second
@@ -28,6 +30,38 @@ var x = setInterval(function () {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerTEXT = "EXPIRED";
   }
 }, 1000);
+
+//submit button
+
+function checkTerms() {
+  if (document.formNews.checkboxNews.checked) {
+    document.formNews.submitNews.disabled = false;
+  } else {
+    document.formNews.submitNews.disabled = true;
+  }
+}
+
+//dropdown mobile
+
+function myFunction() {
+  document.getElementById("headerRight").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+};
+
+//functionalitate butoane
